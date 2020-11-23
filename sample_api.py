@@ -21,6 +21,16 @@ def get_definations():
 
     return jsonify({"msg_dict": msg_dict})
 
+@app.route('/get_definations', methods=['POST', 'GET'])
+def get_definations():
+    data = request.args
+    data.to_dict(flat=False)
+    category = data['category'].lower()
+
+    msg_dict = [{"Text": category}]
+
+    return jsonify({"msg_dict": msg_dict})
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
