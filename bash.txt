@@ -1,0 +1,22 @@
+terminal 1 -------- anaconda prompt
+
+cd Desktop\scratchchatbot
+#python -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -c policy.yml
+#python -m rasa_core.run -d models/dialogue -u models/current/nlu --endpoints endpoints.yml
+#for training the model again......
+python nlu_model.py         
+
+
+
+terminal 2 -------- anaconda prompt
+
+cd Desktop\scratchchatbot
+python -m rasa_core_sdk.endpoint --actions actions
+
+
+
+terminal 3 -------- anaconda prompt
+
+cd Desktop\scratchchatbot
+python ques_api.py
+

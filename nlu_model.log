@@ -1,0 +1,148 @@
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 41 (6 distinct intents)
+	- Found intents: 'fine_ask', 'news', 'thanks', 'greet', 'fine_normal', 'bye'
+	- entity examples: 25 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syamj/SURGE/projects/convaienv/surgeBot/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 41 (6 distinct intents)
+	- Found intents: 'fine_ask', 'news', 'thanks', 'greet', 'fine_normal', 'bye'
+	- entity examples: 25 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 41 examples that have a defined intent out of 41 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      1.00      1.00         3
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         3
+        news       1.00      1.00      1.00        25
+      thanks       1.00      1.00      1.00         3
+
+   micro avg       1.00      1.00      1.00        41
+   macro avg       1.00      1.00      1.00        41
+weighted avg       1.00      1.00      1.00        41
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        38
+   no_entity       1.00      1.00      1.00       141
+
+   micro avg       1.00      1.00      1.00       179
+   macro avg       1.00      1.00      1.00       179
+weighted avg       1.00      1.00      1.00       179
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag, L- tag pair encloses multiple entity classes.i.e. [B-a, I-b, L-a] instead of [B-a, I-a, L-a].
+Assuming B- class is correct.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag not closed by L- tag, i.e [B-a, I-a, O] instead of [B-a, L-a, O].
+Assuming last tag is L-
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 41 (6 distinct intents)
+	- Found intents: 'bye', 'news', 'thanks', 'fine_ask', 'greet', 'fine_normal'
+	- entity examples: 25 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syamj/SURGE/projects/convaienv/surgeBot/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 41 (6 distinct intents)
+	- Found intents: 'bye', 'news', 'thanks', 'fine_ask', 'greet', 'fine_normal'
+	- entity examples: 25 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 41 examples that have a defined intent out of 41 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      1.00      1.00         3
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         3
+        news       1.00      1.00      1.00        25
+      thanks       1.00      1.00      1.00         3
+
+   micro avg       1.00      1.00      1.00        41
+   macro avg       1.00      1.00      1.00        41
+weighted avg       1.00      1.00      1.00        41
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        38
+   no_entity       1.00      1.00      1.00       141
+
+   micro avg       1.00      1.00      1.00       179
+   macro avg       1.00      1.00      1.00       179
+weighted avg       1.00      1.00      1.00       179
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag, L- tag pair encloses multiple entity classes.i.e. [B-a, I-b, L-a] instead of [B-a, I-a, L-a].
+Assuming B- class is correct.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag not closed by L- tag, i.e [B-a, I-a, O] instead of [B-a, L-a, O].
+Assuming last tag is L-
